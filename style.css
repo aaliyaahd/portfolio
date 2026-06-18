@@ -73,11 +73,29 @@ nav a:hover{
 
 .hero-text{
     flex:1;
+    text-align:left;
 }
 
 .hero-text h1{
-    font-size:3.5rem;
+    font-size:2.7rem;
     font-weight:800;
+    line-height:1.1;
+    margin:0;
+    color:#6c63ff;
+}
+
+.hero-text h2{
+    font-size:2rem;
+    margin:10px 0 20px 0;
+    padding:0;
+    font-weight:600;
+    color:#444;
+}
+
+.hero-text p{
+    margin:0 0 25px 0;
+    font-size:1.1rem;
+    color:#666;
 }
 
 .hero-text span{
@@ -133,6 +151,10 @@ section h2{
     margin-bottom:40px;
     font-size:2.2rem;
     color:#6c63ff;
+}
+
+.hero-text h2{
+    text-align:left !important;
 }
 
 /* =====================
@@ -210,45 +232,6 @@ section h2{
     gap:25px;
 }
 
-/* =====================
-   ACHIEVEMENT
-===================== */
-
-.achievement-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.achievement-card{
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.achievement-card:hover{
-    transform:translateY(-5px);
-}
-
-/* =====================
-   CERTIFICATE
-===================== */
-
-.certificate-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.certificate-card{
-    background:white;
-    padding:25px;
-    text-align:center;
-    border-radius:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
 
 /* =====================
    PROJECTS
@@ -390,4 +373,55 @@ footer{
         flex-wrap:wrap;
         justify-content:center;
     }
+}
+
+/* =====================
+   MOBILE RESPONSIVE
+===================== */
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:40px;
+        padding:100px 8%;
+    }
+
+    .hero-text{
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:2.5rem;
+    }
+
+    .hero-text h2{
+        font-size:1.5rem;
+        text-align:center !important;
+    }
+
+    .hero-image img{
+        width:250px;
+        height:250px;
+    }
+
+    .hero-text button{
+        width:100%;
+        max-width:250px;
+    }
+
 }
