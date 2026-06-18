@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliyah Daimah Rizkiyah | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="logo">
+            Aliyah Portfolio
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#career">Career Goal</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="darkMode">🌙</button>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                Hi, I'm
+                <span>Aliyah Daimah Rizkiyah</span>
+            </h1>
+
+            <h2 id="typing"></h2>
+
+            <p>
+                Passionate about Data Analysis,
+                Project Management,
+                and Business Development.
+            </p>
+
+            <button onclick="scrollToSection('about')">
+                Explore More
+            </button>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="profile.jpg" alt="Profile">
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="card about-content">
+
+            <p>
+                Hello! I am Aliyah Daimah Rizkiyah,
+                a Mathematics student at
+                Airlangga University.
+
+                I have a strong interest in data analysis,
+                optimization, project management,
+                and business development.
+
+                I enjoy learning new things,
+                working collaboratively,
+                and solving problems through
+                analytical thinking and creativity.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>Airlangga University</h3>
+                <span>2024 - Present</span>
+                <p>Bachelor of Mathematics</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Trimurti Senior High School</h3>
+                <span>2021 - 2024</span>
+                <p>Science Major</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+
+        <h2>Organizational Experience</h2>
+
+        <div class="experience-grid">
+
+            <div class="card">
+                <h3>Staff Sponsorship of Abdi Desa Rawatungga, Airlangga University</h3>
+                <p>2025</p>
+            </div>
+
+             <div class="card">
+                <h3>Staff of the Group Facilitator PENDEKAR, Faculty of Sains and Technology</h3>
+                <p>2025</p>
+            </div>
+
+            <div class="card">
+                <h3>Staff Sponsoship of Dekan Cup, Faculty of Science and Technology</h3>
+                <p>2025</p>
+            </div>
+
+            <div class="card">
+                <h3>Staff Sponsorship of Pasar Raya, Airlangga University</h3>
+                <p>2025</p>
+            </div>
+
+            <div class="card">
+                <h3>Staff Sponsorship of Reformafest, Faculty of Science and Technology</h3>
+                <p>2025</p>
+            </div>
+
+            <div class="card">
+                <h3>Staff Sponsorship of Get to Know to Airlanga, Airlangga University</h3>
+                <p>2026</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+
+                <h3>Menu Optimization System of Makanan Bergizi Gratis</h3>
+
+                <p>
+                    Developed a menu recommendation
+                    system using the Greedy Algorithm
+                    to determine optimal menu choices
+                    based on nutrition and cost.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Game Tower of Hanoi</h3>
+
+                <p>
+                    Built an interactive Tower of Hanoi game
+                    using HTML, CSS, and JavaScript to understand
+                    the stack concept in data structures,
+                    especially how recursion and
+                    LIFO (Last In, First Out)
+                    work in solving algorithmic problems.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Production Data Analysis</h3>
+
+                <p>
+                    Performed statistical analysis
+                    using Minitab to evaluate
+                    production process performance.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    Designed and developed
+                    a responsive personal portfolio
+                    using HTML, CSS, and JavaScript.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="card">
+
+            <h3>Hard Skills</h3>
+
+            <br>
+
+            <div class="skill">
+                <p>Microsoft Excel, Microsoft Word</p>
+                <div class="bar">
+                    <div class="fill" style="width:90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Minitab</p>
+                <div class="bar">
+                    <div class="fill" style="width:95%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Google Sheets</p>
+                <div class="bar">
+                    <div class="fill" style="width:100%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>HTML, CSS, JavaScript</p>
+                <div class="bar">
+                    <div class="fill" style="width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Python</p>
+                <div class="bar">
+                    <div class="fill" style="width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>C++</p>
+                <div class="bar">
+                    <div class="fill" style="width:75%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>WinQSB</p>
+                <div class="bar">
+                    <div class="fill" style="width:85%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Google Documents</p>
+                <div class="bar">
+                    <div class="fill" style="width:100"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="card">
+
+            <h3>Soft Skills</h3>
+
+            <ul>
+                <li>Leadership</li>
+                <li>Communication</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+                <li>Public Speaking</li>
+                <li>Critical Thinking</li>
+                <li>Data Analyst</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- CAREER GOAL -->
+
+    <section id="career">
+
+        <h2>Career Goal</h2>
+
+        <div class="card">
+
+            <p>
+                My goal is to become a professional
+                in Industrial Engineering,
+                Data Analysis, and Business Development
+                who can contribute to improving
+                business processes and operational efficiency
+                through data-driven solutions.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <p>aliyahdaimah@email.com</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fab fa-whatsapp"></i>
+                <p>+62 851-0142-1163</p>
+            </div>
+
+
+            <div class="contact-card">
+                <i class="fab fa-github"></i>
+                <p>github.com/aaliyaahd</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Aliyah Daimah Rizkiyah. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
