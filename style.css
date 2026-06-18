@@ -58,6 +58,13 @@ nav a:hover{
     color:#6c63ff;
 }
 
+.menu-toggle{
+    display:none;
+    font-size:1.8rem;
+    cursor:pointer;
+    color:#6c63ff;
+}
+
 /* =====================
    HERO
 ===================== */
@@ -316,32 +323,6 @@ footer{
     padding:30px;
 }
 
-/* =====================
-   DARK MODE
-===================== */
-
-.dark{
-    background:#121212;
-    color:white;
-}
-
-.dark .card,
-.dark .timeline-item,
-.dark .achievement-card,
-.dark .certificate-card,
-.dark .project-card,
-.dark .contact-card{
-    background:#1e1e1e;
-    color:white;
-}
-
-.dark nav{
-    background:#1e1e1e;
-}
-
-.dark nav a{
-    color:white;
-}
 
 /* =====================
    RESPONSIVE
@@ -426,8 +407,34 @@ footer{
 
 }
 
-@media (max-width:768px){
-    body{
-        background:red !important;
+@media(max-width:768px){
+
+    nav{
+        flex-direction:row;
+        justify-content:space-between;
+        padding:18px 7%;
     }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav ul{
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+        background:white;
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+        padding:25px 0;
+
+        display:none;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+
 }

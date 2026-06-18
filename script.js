@@ -85,38 +85,6 @@ window.addEventListener("scroll", () => {
 
 });
 
-// =====================
-// DARK MODE
-// =====================
-
-const darkBtn = document.getElementById("darkMode");
-
-if (darkBtn) {
-
-    if (localStorage.getItem("theme") === "dark") {
-        document.body.classList.add("dark");
-        darkBtn.innerHTML = "☀️";
-    }
-
-    darkBtn.addEventListener("click", () => {
-
-        document.body.classList.toggle("dark");
-
-        if (document.body.classList.contains("dark")) {
-
-            localStorage.setItem("theme", "dark");
-            darkBtn.innerHTML = "☀️";
-
-        } else {
-
-            localStorage.setItem("theme", "light");
-            darkBtn.innerHTML = "🌙";
-
-        }
-
-    });
-
-}
 
 // =====================
 // NAVBAR EFFECT
